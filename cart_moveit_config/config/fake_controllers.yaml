@@ -1,0 +1,18 @@
+controller_list:
+  - name: fake_cart_arm_controller
+    type: $(arg execution_type)
+    joints:
+      - Rev3
+      - Rev4
+      - Rev5
+      - Rev6
+      - Rev7
+  - name: fake_hand_controller
+    type: $(arg execution_type)
+    joints:
+      - Rev8
+      - Rev10
+      - Rev9
+initial:  # Define initial robot poses.
+  - group: cart_arm
+    pose: all_up
